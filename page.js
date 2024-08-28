@@ -4,13 +4,38 @@ module.exports = {
     toField: '#to',
     phoneNumberField: '#phone',
     codeField: '#code',
+    countervalue: '//*[@id="root"]/div/div[3]/div[3]/div[2]/div[2]/div[4]/div[2]/div[3]/div/div[2]/div[1]/div/div[2]/div/div[2]',
+    cardcode: '/html/body/div/div/div[2]/div[2]/div[2]/form/div[1]/div[2]/div[2]/div[2]/input',
+    icecreamLabel: '//*[@id="root"]/div/div[3]/div[3]/div[2]/div[2]/div[4]/div[2]/div[3]/div/div[2]/div[1]/div/div[1]',
+    
+
+
     // Buttons
     callATaxiButton: 'button=Call a taxi',
     phoneNumberButton: '//div[starts-with(text(), "Phone number")]',
     nextButton: 'button=Next',
     confirmButton: 'button=Confirm',
+    supportive: '//*[@id="root"]/div/div[3]/div[3]/div[2]/div[1]/div[5]/div[2]',
+    paymentMethodbutton: '//*[@id="root"]/div/div[3]/div[3]/div[2]/div[2]/div[2]/div[1]',
+    addcardbutton:'//*[@id="root"]/div/div[2]/div[2]/div[1]/div[2]/div[3]/div[2]',
+    
+    cardnumber: '//*[@id="number"]',
+    submitbutton: '//*[@id="root"]/div/div[2]/div[2]/div[2]/form/div[3]/button[1]',
+    closebutton: '//*[@id="root"]/div/div[2]/div[2]/div[1]/button',
+    driverMessageField: '//*[@id="comment"]',
+    orderRequirementbutton: '//*[@id="root"]/div/div[3]/div[3]/div[2]/div[2]/div[4]/div[1]/div[2]/img',
+    addcardtitle: '//*[@id="root"]/div/div[2]/div[2]/div[2]/div',
+    blanketandhandkerchiefsbutton:'//*[@id="root"]/div/div[3]/div[3]/div[2]/div[2]/div[4]/div[2]/div[1]/div/div[2]/div/span',
+    businesscar: '//*[@id="root"]/div/div[3]/div[3]/div[2]/div[1]/div[1]/div[2]',
+    bluebutton: '//*[@id="root"]/div/div[3]/div[4]/button',
+    icecreamplus: '//*[@id="root"]/div/div[3]/div[3]/div[2]/div[2]/div[4]/div[2]/div[3]/div/div[2]/div[1]/div/div[2]/div/div[3]',
+
+
     // Modals
     phoneNumberModal: '.modal',
+    paymentmethodModal: '.payment-picker.open',
+    addingacardModal: '.modal',
+    carsearchmodal: '//*[@id="root"]/div/div[5]/div[2]/div[1]/div',
     // Functions
     fillAddresses: async function(from, to) {
         const fromField = await $(this.fromField);
